@@ -1,0 +1,13 @@
+name: "api_migration_env"
+version: "1.0.0"
+env_class: "environment.MigrationEnv"
+# CHANGED: Point to root models
+action_type: "models.MigrationAction"
+observation_type: "models.MigrationObservation"
+tasks:
+  - id: "easy"
+    description: "Rename keys to camelCase"
+  - id: "medium"
+    description: "Type casting and formatting"
+  - id: "hard"
+    description: "Conditional logic migration"

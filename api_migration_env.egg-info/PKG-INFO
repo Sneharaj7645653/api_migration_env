@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: api_migration_env
+Version: 1.0.0
+Summary: RL environment for legacy API migration tasks
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: openenv-core
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: pydantic
+Requires-Dist: openai
