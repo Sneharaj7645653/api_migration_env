@@ -18,12 +18,12 @@ TASKS = {
 
 def calculate_reward(prediction, ground_truth):
     if prediction == ground_truth:
-        return 1.0
+        return 1
     
     # Partial Progress: Reward for correct keys
     correct_keys = set(prediction.keys()) & set(ground_truth.keys())
     if not correct_keys:
-        return 0.0
+        return 0
     
     score = (len(correct_keys) / len(ground_truth.keys())) * 0.5
     return round(score, 2)
